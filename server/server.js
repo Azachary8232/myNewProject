@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+// require('./routes/person.routes')(app);
 const PORT = 8000;
 
 // This will fire our mongoose.connect statement to initialize our database connection
