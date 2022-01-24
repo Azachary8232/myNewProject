@@ -1,13 +1,13 @@
 const express = require("express");
 const app = express();
-// require('./routes/person.routes')(app);
+require('./routes/person.routes')(app);
 const PORT = 8000;
 
 // This will fire our mongoose.connect statement to initialize our database connection
 // require("./server/config/mongoose.config");
 
 //  middleware
-app.use(express.json(), express.urlencoded({ extended: true }));
+// app.use(express.json(), express.urlencoded({ extended: true }));
 
 // This is where we import the users routes function from our user.routes.js file
 // const AllMyUserRoutes = require("./server/routes/user.routes");

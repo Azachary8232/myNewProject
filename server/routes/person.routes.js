@@ -1,3 +1,10 @@
+
+const PersonController = require('../controllers/person.controller');
+module.exports = function(app){
+    app.get('/api', PersonController.index);
+}
+
+
 // const UserController = require("../controllers/user.controller");
 
 // module.exports = app => {
